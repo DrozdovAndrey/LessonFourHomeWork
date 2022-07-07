@@ -13,32 +13,32 @@ namespace GB
         {
 
             Console.Clear();
-            int[] array = new int[new Random().Next(5,11)];
+            int[] array = new int[new Random().Next(5, 11)];
             FillArray(array);
             Console.WriteLine("Случайно сгенерированный массив, ");
             Console.WriteLine("размер от 5 до 10, ");
-            Console.WriteLine("значения элементов от 1 до 40:");                  
+            Console.WriteLine("значения элементов от 1 до 40:");
             PrintArray(array);
             Console.WriteLine("Массив квадратов этих чисел:");
             GetSquare(array);
             PrintArray(array);
-           
-           
-           
-           
-           
-            void FillArray(int[] col) 
+
+
+
+
+
+            void FillArray(int[] col)
             {
-                
+
                 for (int i = 0; i < col.Length; i++)
                 {
                     col[i] = new Random().Next(1, 41);
                 }
             }
 
-            void PrintArray(int[] col)  
+            void PrintArray(int[] col)
             {
-                
+
                 for (int i = 0; i < col.Length; i++)
                 {
                     Console.WriteLine(col[i]);
@@ -49,11 +49,11 @@ namespace GB
             {
                 for (int i = 0; i < square.Length; i++)
                 {
-                    square[i] = square[i] * square[i]; 
+                    square[i] *= square[i];
                 }
-                
+
             }
-            
+
         }
     }
 }
