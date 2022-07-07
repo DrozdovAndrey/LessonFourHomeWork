@@ -17,12 +17,21 @@ namespace GB
             Console.WriteLine("Введите натуральное число B:");
             int b = Convert.ToInt32(Console.ReadLine());
 
-            double result = 1;
-            for (int i = 1; i <= b; i++)
-            {
-                result = result * a;
-            }
+            double result = Pow(a, b);
+            // for (int i = 1; i <= b; i++)
+            // {
+            //     result = result * a;
+            // }
             Console.WriteLine(result);
+        }
+        static double Pow(double x, int y)
+        {
+            double result = 1;
+            for (int i = 1; i <= y; i++)
+            {
+                result = result * x;
+            }
+            return result;
         }  
     }
 }
