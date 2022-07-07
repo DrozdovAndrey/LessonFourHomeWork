@@ -16,13 +16,23 @@ namespace GB
             Console.Clear();
             Console.WriteLine("Введите число:");
             string a = Convert.ToString(Console.ReadLine());
+            int result = Sum(a);
+            // for (int i = 0; i < a.Length; i++)
+            // {
+            //     result = result + Convert.ToInt32(a[i].ToString());
+            // }
+            Console.WriteLine(result);
+            
+        }
+        static int Sum(string a)
+        {
             int result = 0;
             for (int i = 0; i < a.Length; i++)
             {
                 result = result + Convert.ToInt32(a[i].ToString());
             }
-            Console.WriteLine(result);
             
+            return result;
         }  
     }
 }
